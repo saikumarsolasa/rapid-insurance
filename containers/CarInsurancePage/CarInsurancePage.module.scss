@@ -1,0 +1,10 @@
+.carBannerWrapper {
+  width: 100%;
+  // height: auto;
+  .carImageWrapper {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px 0px;
+    align-items: center;
+  }
+}

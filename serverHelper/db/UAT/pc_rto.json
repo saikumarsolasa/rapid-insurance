@@ -1,0 +1,74 @@
+[
+    {
+      "rto_registration_code": "GJ01",
+      "rto_location_code": 20802,
+      "rto_location": "AHMEDABAD",
+      "rto_cluster": "CATEGORY 2",
+      "rto_state_code": 12,
+      "rto_registration_zone": "Zone-A",
+      "rto_uw_rules": "Active"
+    },
+    {
+      "rto_registration_code": "AP01",
+      "rto_location_code": 20732,
+      "rto_location": "ADILABAD",
+      "rto_cluster": "CATEGORY 6",
+      "rto_state_code": 2,
+      "rto_registration_zone": "Zone-B",
+      "rto_uw_rules": "Active"
+    },
+    {
+      "rto_registration_code": "TN20",
+      "rto_location_code": 20538,
+      "rto_location": "TIRUVALLUR",
+      "rto_cluster": "CATEGORY 17",
+      "rto_state_code": 31,
+      "rto_registration_zone": "Zone-B",
+      "rto_uw_rules": "Active"
+    },
+    {
+      "rto_registration_code": "GA01",
+      "rto_location_code": 20688,
+      "rto_location": "PANAJI",
+      "rto_cluster": "CATEGORY 13",
+      "rto_state_code": 11,
+      "rto_registration_zone": "Zone-B",
+      "rto_uw_rules": "Active"
+    },
+    {
+      "rto_registration_code": "TN10",
+      "rto_location_code": 10203,
+      "rto_location": "CHENNAI SOUTH WEST",
+      "rto_cluster": "CATEGORY 16",
+      "rto_state_code": 31,
+      "rto_registration_zone": "Zone-A",
+      "rto_uw_rules": "Active"
+    },
+    {
+      "rto_registration_code": "DL12",
+      "rto_location_code": 10501,
+      "rto_location": "DELHI",
+      "rto_cluster": "CATEGORY 1",
+      "rto_state_code": 8,
+      "rto_registration_zone": "Zone-A",
+      "rto_uw_rules": "Active"
+    },
+    {
+      "rto_registration_code": "AP09",
+      "rto_location_code": 20208,
+      "rto_location": "Hyderabad",
+      "rto_cluster": "CATEGORY 5",
+      "rto_state_code": 2,
+      "rto_registration_zone": "Zone-A",
+      "rto_uw_rules": "Active"
+    },
+    {
+      "rto_registration_code": "MH01",
+      "rto_location_code": 21170,
+      "rto_location": "MUMBAI",
+      "rto_cluster": "CATEGORY 7",
+      "rto_state_code": 20,
+      "rto_registration_zone": "Zone-A",
+      "rto_uw_rules": "Active"
+    }
+  ]

@@ -1,0 +1,56 @@
+.homeMainWrapper {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 767px) {
+        margin-top: 5rem;
+        height: auto;
+    }
+
+    .bannerWrapper {
+        display: flex;
+
+        .bannerImageWrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .bannerContentWrapper {
+            display: flex;
+            align-items: center;
+            flex-direction:  column;
+
+            a {
+                text-decoration: none;
+            }
+
+            h1{
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;
+                margin-bottom:  2rem;
+            }
+
+
+            .insuranceCardWrapper {
+                display: flex;
+            
+
+                .insuranceCard {
+                    cursor: pointer;
+                    color: #000;
+                    margin : 0 2rem;
+
+                    p {
+                        text-align: center;
+                        color: #000;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}

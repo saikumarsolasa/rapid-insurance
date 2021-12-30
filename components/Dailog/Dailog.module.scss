@@ -1,0 +1,138 @@
+.manufacture_wrapper {
+  button {
+    margin: 0.5rem;
+  }
+
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.fullscreenContentWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+
+  .manufacture_wrapper {
+    button {
+      margin: 0.5rem;
+      font-weight: bold;
+    }
+
+    .loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.verify_otp {
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // &__dailog {
+  //     padding: 1rem;
+  // }
+  &__loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    padding: 5rem;
+  }
+
+  &__input_wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+
+    input {
+      width: 100px;
+      margin: 0 10px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .inputError {
+      transition: all 0.5 ease;
+      border: 2px solid red;
+      outline: none;
+      color: red;
+      box-shadow: 0px 0px 10px red;
+
+      &::placeholder {
+        color: rgba(255, 0, 0, 0.3) !important;
+      }
+    }
+  }
+}
+
+.full_screen_loading {
+  .loading_div {
+    width: 100px;
+    height: 100px;
+    padding: 2rem;
+    margin: 2rem;
+  }
+}
+
+.quotaionDetailsWrapper {
+  width: 600px;
+  height: 500px;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+
+  .quotationHeader {
+    height: 40px;
+    background-color: #0d6efd;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0px;
+    margin: 0;
+  }
+
+  .closeDialog :hover {
+    color: rgb(73, 69, 69);
+    cursor: pointer;
+  }
+}
+
+.closeIcon {
+  display: flex;
+  justify-content: end;
+}
+
+.closeIcon:hover {
+  color: rgb(73, 69, 69);
+  cursor: pointer;
+}
+
+.details {
+  p {
+    margin: 0px;
+    font-weight: 600;
+    color: #030329;
+    margin-bottom: 3px;
+    letter-spacing: 0.2px;
+    font-size: 14px;
+    margin-top: 2px;
+  }
+  .details_list {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 270px 5px 280px;
+    .details_list_key {
+      margin-left: 2px;
+    }
+    .details_list_value {
+      margin-left: 10px;
+    }
+  }
+}

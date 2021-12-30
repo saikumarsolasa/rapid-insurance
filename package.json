@@ -1,0 +1,53 @@
+{
+  "name": "lmv-insurance",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@date-io/date-fns": "^2.11.0",
+    "@emotion/react": "^11.5.0",
+    "@emotion/styled": "^11.3.0",
+    "@material-ui/core": "^5.0.0-beta.5",
+    "@material-ui/lab": "^5.0.0-alpha.44",
+    "@mui/icons-material": "^5.0.5",
+    "@mui/material": "^5.0.4",
+    "axios": "^0.23.0",
+    "bootstrap": "^5.0.0-beta3",
+    "btoa": "^1.2.1",
+    "classnames": "^2.2.6",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.1.1",
+    "cryptr": "^6.0.2",
+    "date-fns": "^2.25.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "form-data": "^2.3.3",
+    "formik": "^2.2.9",
+    "framer-motion": "^4.1.17",
+    "fs": "^0.0.1-security",
+    "js-sha512": "^0.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "next": "11.1.2",
+    "node-fetch": "^2.6.1",
+    "nprogress": "^0.2.0",
+    "pg": "^8.7.1",
+    "pg-promise": "^10.11.1",
+    "react": "17.0.2",
+    "react-calendar": "^3.5.0",
+    "react-date-picker": "^8.3.4",
+    "react-datepicker": "^4.3.0",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "sass": "^1.42.1",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2"
+  }
+}
