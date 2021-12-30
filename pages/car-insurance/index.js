@@ -3,22 +3,21 @@ import { GetPcManufacturers } from 'helper/api';
 import CarInsurance from '../../containers/CarInsurancePage/CarInsurancePage';
 import { withRouter } from 'next/router';
 
-const CarInsurancePage = ({ data }) => {
+const CarInsurancePage = ({ vehiclemanufacturers }) => {
   return (
     <RouteAnimation>
-      <CarInsurance vehiclemanufacturers={data} />
+      <CarInsurance vehiclemanufacturers={vehiclemanufacturers} />
     </RouteAnimation>
   );
 };
 
 export default withRouter(CarInsurancePage);
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const data = await GetPcManufacturers();
   return {
     props: {
-      // vehiclemanufacturers: data,
-      data,
+      vehiclemanufacturers: data,
     },
   };
 }
