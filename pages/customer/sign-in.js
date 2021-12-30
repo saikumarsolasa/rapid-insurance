@@ -1,23 +1,22 @@
-import LogoHeader from "../../components/Logo Header/LogoHeader";
-import SignInPage from "../../containers/SignInPage/SignInPage"
-
+import LogoHeader from '../../components/Logo Header/LogoHeader';
+import SignInPage from '../../containers/SignInPage/SignInPage';
 
 const SignIn = () => {
-    return (
-        <div>
-            <SignInPage />
-        </div>
-    )
-}
+  return (
+    <div>
+      {/* <SignInPage /> */}
+      signIn
+    </div>
+  );
+};
 
 export default SignIn;
 
 SignIn.getLayout = function getLayout(page) {
-    return (
-        <main>
-            <LogoHeader />
-            {page}
-
-        </main>
-    )
-}
+  return (
+    <main>
+      <LogoHeader />
+      {page}
+    </main>
+  );
+};

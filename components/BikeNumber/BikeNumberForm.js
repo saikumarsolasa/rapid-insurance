@@ -7,13 +7,7 @@ import { motion } from 'framer-motion';
 import { fadeIn, routeAnimation } from '../../helper/animation';
 import { Button, CircularProgress } from '@mui/material';
 
-const BikeNumberForm = ({
-  submitHandler,
-  values,
-  isLoading,
-  linkHandler,
-  newBikeHandler,
-}) => {
+const BikeNumberForm = ({ submitHandler, values, isLoading, linkHandler, newBikeHandler }) => {
   const vechile_number = {
     state_code: '',
     rto_code: '',
@@ -21,9 +15,7 @@ const BikeNumberForm = ({
     number: '',
   };
 
-  const [vechileNumber, setVechileNumber] = useState(
-    values ? values : vechile_number
-  );
+  const [vechileNumber, setVechileNumber] = useState(values ? values : vechile_number);
   const [error, setError] = useState(false);
 
   const newBikeInsuranceHandler = () => {
@@ -56,18 +48,13 @@ const BikeNumberForm = ({
       }
     }
     if (event.target.name === 'series') {
-      if (
-        (Number(event.nativeEvent.data) && event.target.value.length < 1) ||
-        event.target.value.length > 3
-      ) {
+      if ((Number(event.nativeEvent.data) && event.target.value.length < 1) || event.target.value.length > 3) {
         return;
       }
 
       if (Number(event.nativeEvent.data) || event.nativeEvent.data === '0') {
         document.querySelector('input[name=number]').focus();
-        document.querySelector('input[name=number').value = Number(
-          event.nativeEvent.data
-        );
+        document.querySelector('input[name=number').value = Number(event.nativeEvent.data);
         return;
       }
 
@@ -152,62 +139,22 @@ const BikeNumberForm = ({
       <form onSubmit={onSubmitHandler}>
         <div>
           <h1>Bike Insurance</h1>
-          <p>COMPARE & BUY AFFORDABLE TERM INSURANCE PLANS AT LOWEST RATES</p>
+          <p>COMPARE &nbsp;&amp;&nbsp; BUY AFFORDABLE TERM INSURANCE PLANS AT LOWEST RATES</p>
           <div className={styles.bikeInputWrapper}>
-            <input
-              type="text"
-              className={classNames('form-control', error && styles.inputError)}
-              placeholder="TS"
-              name="state_code"
-              value={vechileNumber.state_code}
-              onChange={onChangeHanlder}
-            />
-            <input
-              type="text"
-              className={classNames('form-control', error && styles.inputError)}
-              placeholder="02"
-              name="rto_code"
-              value={vechileNumber.rto_code}
-              onChange={onChangeHanlder}
-            />
-            <input
-              type="text"
-              className={classNames('form-control', error && styles.inputError)}
-              placeholder="AB"
-              name="series"
-              value={vechileNumber.series}
-              onChange={onChangeHanlder}
-              maxLength="3"
-            />
-            <input
-              type="text"
-              className={classNames('form-control', error && styles.inputError)}
-              placeholder="1234"
-              name="number"
-              value={vechileNumber.number}
-              onChange={onChangeHanlder}
-              maxLength="4"
-            />
+            <input type="text" className={classNames('form-control', error && styles.inputError)} placeholder="TS" name="state_code" value={vechileNumber.state_code} onChange={onChangeHanlder} />
+            <input type="text" className={classNames('form-control', error && styles.inputError)} placeholder="02" name="rto_code" value={vechileNumber.rto_code} onChange={onChangeHanlder} />
+            <input type="text" className={classNames('form-control', error && styles.inputError)} placeholder="AB" name="series" value={vechileNumber.series} onChange={onChangeHanlder} maxLength="3" />
+            <input type="text" className={classNames('form-control', error && styles.inputError)} placeholder="1234" name="number" value={vechileNumber.number} onChange={onChangeHanlder} maxLength="4" />
           </div>
           <p>
-            By clicking on "SUBMIT", You agree to our{' '}
-            <b>Privacy Policy & Terms of Use</b>
+            By clicking on &quot;SUBMIT&quot;, You agree to our <b>Privacy Policy&nbsp;&amp;&nbsp;Terms of Use</b>
           </p>
-          <Button
-            disabled={isLoading}
-            className="btn btn-primary w-100"
-            type="submit"
-            variant="contained"
-          >
-            {isLoading ? (
-              <CircularProgress size="20px" color="inherit" />
-            ) : (
-              'Submit'
-            )}
+          <Button disabled={isLoading} className="btn btn-primary w-100" type="submit" variant="contained">
+            {isLoading ? <CircularProgress size="20px" color="inherit" /> : 'Submit'}
           </Button>
         </div>
         <div className={styles.links}>
-          <p onClick={linkClickHandler}>I DON'T REMEMBER MY VECHILE NUMBER</p>
+          <p onClick={linkClickHandler}>I DON&apos;T REMEMBER MY VECHILE NUMBER</p>
           <p onClick={newBikeInsuranceHandler}>I HAVE A NEW BIKE</p>
         </div>
       </form>

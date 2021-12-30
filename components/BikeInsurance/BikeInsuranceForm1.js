@@ -21,12 +21,15 @@ import { ReactDateFieldMonthYear } from 'helper/formikFields/dateField';
 import { InputDataList } from 'helper/formikFields/inputDataList';
 
 const BikeInsuranceForm1 = (props) => {
-  useEffect(async () => {
-    if (window.location.search.length > 0) {
-      const urlObject = window.location.search.split('=');
-      const userObj = await DecryptObject(urlObject[1]);
-      setUserData(userObj);
+  useEffect(() => {
+    async function fetchData() {
+      if (window.location.search.length > 0) {
+        const urlObject = window.location.search.split('=');
+        const userObj = await DecryptObject(urlObject[1]);
+        setUserData(userObj);
+      }
     }
+    fetchData();
   }, []);
   const { setInsurance, values, isLoading } = props;
 
@@ -50,19 +53,22 @@ const BikeInsuranceForm1 = (props) => {
   const [makeValue, setMakeValue] = useState('');
   const [fuelType, setFuelType] = useState([]);
 
-  useEffect(async () => {
-    if (Object.keys(values).length === 0 || makeValue.length === 0) {
-      try {
-        const response = await GetManufacturers();
-        setManufacturers(response.makes);
-        const response1 = await GetAllLocations();
-        setRtoLocations(response1.data);
-        const response2 = await GetInsuranceCompanies();
-        setInsurers(response2.data);
-      } catch (error) {
-        alert(error.message);
+  useEffect(() => {
+    async function fetchData() {
+      if (Object.keys(values).length === 0 || makeValue.length === 0) {
+        try {
+          const response = await GetManufacturers();
+          setManufacturers(response.makes);
+          const response1 = await GetAllLocations();
+          setRtoLocations(response1.data);
+          const response2 = await GetInsuranceCompanies();
+          setInsurers(response2.data);
+        } catch (error) {
+          alert(error.message);
+        }
       }
     }
+    fetchData();
   }, [makeValue]);
 
   const optionHanlder = async (value, displayKey, displayKey2, valueKey) => {
