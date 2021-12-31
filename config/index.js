@@ -2,6 +2,6 @@
 export default {
   RapidInsuranceService: {
     // baseURL: 'http://localhost:3000',
-    baseURL: '',
+    baseURL: 'https://lmv-insurance.herokuapp.com',
   },
 };
